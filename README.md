@@ -1,3 +1,17 @@
+Cmd Push:
+…or create a new repository on the command line
+
+echo "# webbasiczero" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/phongleo92/webbasiczero.git
+git push -u origin master
+…or push an existing repository from the command line
+
+git remote add origin https://github.com/phongleo92/webbasiczero.git
+git push -u origin master
+
 # ShoppingApp
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
