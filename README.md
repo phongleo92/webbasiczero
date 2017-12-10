@@ -9,7 +9,7 @@ git remote add origin https://github.com/phongleo92/webbasiczero.git
 git push -u origin master
 …or push an existing repository from the command line
 
-git remote add origin https://github.com/phongleo92/webbasiczero.git
+git remote add origin https://github.com/phongleo92/webbasiczero.git \n
 git push -u origin master
 
 # ShoppingApp
