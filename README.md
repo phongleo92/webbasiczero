@@ -2,14 +2,14 @@ Cmd Push:
 …or create a new repository on the command line
 
 echo "# webbasiczero" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/phongleo92/webbasiczero.git
-git push -u origin master
+git init<br>
+git add README.md<br>
+git commit -m "first commit"<br>
+git remote add origin<br> https://github.com/phongleo92/webbasiczero.git<br>
+git push -u origin master<br>
 …or push an existing repository from the command line
 
-git remote add origin https://github.com/phongleo92/webbasiczero.git /n
+git remote add origin https://github.com/phongleo92/webbasiczero.git <br>
 git push -u origin master
 
 # ShoppingApp
