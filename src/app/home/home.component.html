@@ -49,15 +49,28 @@
 <br>
 
 <div>
-    <hr><h2 class="title"><span>Top Selling</span></h2><hr>
-    <div style="text-align: center;">
-        <button mat-mini-fab color="accent">
+    <hr><h2 class="title"><span>Top Selling</span></h2>
+    <div style="text-align: center; margin: 0px 10px 0px 0px;" fxLayout="row" fxLayoutGap="5px" fxLayoutAlign="center center">
+        <button mat-mini-fab color="accent" [disabled]="leftNavDisabled" (click)="moveLeft()">
             <mat-icon aria-label="Example icon-button with a heart icon">arrow_left</mat-icon>
         </button>
-        <button mat-mini-fab color="accent">
+        <button mat-mini-fab color="accent" [disabled]="rightNavDisabled" (click)="moveRight()">
             <mat-icon aria-label="Example icon-button with a heart icon">arrow_right</mat-icon>
         </button>
     </div>
+    <div class="demo-border">
+        <div class="demo-one"
+            drag-scroll
+            drag-scroll-y-disabled="true"
+            scrollbar-hidden="true"
+            (reachesLeftBound)="leftBoundStat($event)"
+            (reachesRightBound)="rightBoundStat($event)"
+            #nav>
+            <img *ngFor="let image of imagelist" [src]="'assets/images/banner/' + image" (click)="clickItem(image)"/>
+        </div>
+    </div>
+    
+
 </div>
 
 <div class="container">

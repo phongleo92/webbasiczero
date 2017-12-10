@@ -8,6 +8,8 @@ import { ModalModule, CollapseModule, ButtonsModule, AlertModule, CarouselModule
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MatCardModule, MatIconModule, MatButtonModule, MatCheckboxModule, MatGridListModule } from '@angular/material';
 
+import { DragScrollModule } from 'ngx-drag-scroll';
+
 import { AppComponent } from './app.component';
 
 import { PostsComponent } from './posts/posts.component';
@@ -49,6 +51,7 @@ const ROUTES = [
     BrowserModule,
     FormsModule,
     HttpModule,
+    DragScrollModule,
     BrowserAnimationsModule,MatButtonModule, MatCheckboxModule, MatGridListModule,
     MatIconModule, MatCardModule,
     AlertModule.forRoot(),BsDropdownModule.forRoot(),CarouselModule.forRoot(),
